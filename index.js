@@ -1,7 +1,7 @@
 //const express = require('express')
 import express from 'express'
 import { success, getUniqueId } from './src/helper/helper.js'
-import morgan from 'morgan'
+// import morgan from 'morgan'
 import bodyParser from 'body-parser'
 import { initDb, Pokemon } from './src/db/sequelize.js'
 import * as pokemonsRoutes from './src/routes/pokemons-routes.js'
@@ -11,7 +11,7 @@ const app = express()
 const port = 3000;
 // body parsing
 app.use(express.urlencoded({ extended: true }));
-app.use(morgan('combined'));
+//app.use(morgan('combined'));
 app.use(bodyParser.json())
 
 
