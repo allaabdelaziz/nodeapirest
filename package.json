@@ -1,0 +1,33 @@
+{
+  "name": "pokemon-api",
+  "version": "1.0.0",
+  "description": "api rest pokemon cloud campus",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+   
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "pokemon"
+  ],
+  "author": "SB",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^3.0.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
